@@ -5,7 +5,7 @@
 
 &sk {
   release-after-ms = <2000>;
-}
+};
 
 
 / {
@@ -13,8 +13,8 @@
   behaviors {
 //    combos {
 //      #include "combos.dtsi"
-//    }
-  }
+//    };
+  };
 
 //  behaviors {
 //    hm: homerow_mods {
