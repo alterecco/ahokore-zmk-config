@@ -7,6 +7,10 @@
 #define NUM 3
 #define ADJ 4
 
+#define __ESC__ &kp ESC
+
+
+
 #define NEXT LC(PG_DN)
 #define PREV LC(PG_UP)
 #define SW_APP LG(TAB)
