@@ -20,9 +20,9 @@ compatible = "zmk,combos";
   };
 
 COMBO(kp_q, ___Q___, 1 2, DEF)
-COMBO(kp_q, ___B___, 2 3, DEF)
-COMBO(kp_q, ___J___, 6 7, DEF)
-COMBO(kp_q, ___Z___, 7 8, DEF)
+COMBO(kp_b, ___B___, 2 3, DEF)
+COMBO(kp_j, ___J___, 6 7, DEF)
+COMBO(kp_z, ___Z___, 7 8, DEF)
 
 COMBO(undo, MAC_UNDO, 20 21, DEF)
 COMBO(redo, MAC_REDO, 20 10, DEF)
