@@ -2,7 +2,7 @@
 
 
 #define XXXXXXX &none
-#define _______ &trans
+#define _______ &none
 
 #define o_NAV_o &mo NAV
 #define o_SPC_o &lt SYM SPACE
@@ -35,6 +35,11 @@
 #define ___Y___ &kp Y
 #define ___Z___ &kp Z
 
+// WORKS FOR ABC EXTENDED
+#define _ARING_ &kp RA(A)
+#define _OSLSH_ &kp RA(O)
+#define _AELIG_ &kp RA(SINGLE_QUOTE)
+
 #define ___0___ &kp N0
 #define ___1___ &kp N1
 #define ___2___ &kp N2
@@ -46,31 +51,44 @@
 #define ___8___ &kp N8
 #define ___9___ &kp N9
 
+#define _LPARN_ &kp LEFT_PARENTHESIS
+#define _RPARN_ &kp RIGHT_PARENTHESIS
+#define _LCBRC_ &kp LEFT_BRACE
+#define _RCBRC_ &kp RIGHT_BRACE
+#define _LBRAC_ &kp LEFT_BRACKET
+#define _RBRAC_ &kp RIGHT_BRACKET
+#define _LABRC_ &kp LESS_THAN
+#define _RABRC_ &kp MORE_THAN
+
 #define __DOT__ &kp DOT
 #define _COMMA_ &kp COMMA
-//#define _SQUOT_ KC_QUOTE
-//#define _DQUOT_ KC_DOUBLE_QUOTE
-//#define _COLON_ KC_COLON
-//#define _SCOLN_ KC_SCOLON
-//#define _TILDE_ LSFT(KC_GRAVE)
-//#define _GRAVE_ KC_GRAVE
-//#define _UNDRS_ KC_UNDERSCORE
-//#define _EQUAL_ KC_EQUAL
-//#define _MINUS_ KC_MINUS
-//#define _PLUS__ KC_PLUS
-//#define _ASTER_ KC_ASTERISK
-//#define _HASH__ KC_HASH
-//#define _DOLLR_ KC_DOLLAR
-//#define _SLASH_ KC_SLASH
-//#define _BSLSH_ KC_BSLASH
-//#define _PERCT_ KC_PERCENT
-//#define _AMPRS_ KC_AMPERSAND
-//#define _QUEST_ KC_QUESTION
-//#define _EXCLM_ KC_EXCLAIM
-//#define _CIRCF_ KC_CIRCUMFLEX
-//#define _PIPE__ LSFT(KC_BSLS)
-//#define __AT___ KC_AT
-//
+#define _SQUOT_ &kp SINGLE_QUOTE
+#define _DQUOT_ &kp DOUBLE_QUOTES
+#define _COLON_ &kp COLON
+#define _SCOLN_ &kp SEMICOLON
+#define _TILDE_ &kp TILDE
+#define _GRAVE_ &kp GRAVE
+#define _UNDRS_ &kp UNDERSCORE
+#define _EQUAL_ &kp EQUAL
+#define _MINUS_ &kp MINUS
+#define _PLUS__ &kp PLUS
+#define _STAR__ &kp STAR
+#define _HASH__ &kp HASH
+#define _DOLLR_ &kp DOLLAR
+#define _SLASH_ &kp SLASH
+#define _BSLSH_ &kp BACKSLASH
+#define _PERCT_ &kp PERCENT
+#define _AMPRS_ &kp AMPERSAND
+#define _QUEST_ &kp QUESTION
+#define _EXCLM_ &kp EXCLAMATION
+#define _CARET_ &kp CARET
+#define _PIPE__ &kp PIPE
+#define __AT___ &kp AT
+
+#define _LEFT__ &kp LEFT
+#define __UP___ &kp UP
+#define _DOWN__ &kp DOWN
+#define _RIGHT_ &kp RIGHT
 
 #define _SPACE_ &kp SPACE
 #define __TAB__ &kp TAB
@@ -78,43 +96,28 @@
 #define _BKSPC_ &kp BACKSPACE
 #define __ESC__ &kp ESCAPE
 
-#define _LSHFT_ &kp LEFT_SHIFT
-#define _LCTRL_ &kp LEFT_CONTROL
-#define _LALT__ &kp LEFT_ALT
-#define _LCMD__ &kp LEFT_COMMAND
+#define _LSHFT_ &sk LEFT_SHIFT
+#define _LCTRL_ &sk LEFT_CONTROL
+#define _LALT__ &sk LEFT_ALT
+#define _LCMD__ &sk LEFT_COMMAND
+
+#define o_TABL_ &kp LS(LG(_LBRAC_))
+#define o_TABR_ &kp LS(LG(_RBRAC_))
+
+#define MAC_UNDO &kp LG(Z)
+#define MAC_REDO &kp LS(LG(Z))
+#define MAC_COPY &kp LG(C)
+#define MAC_PASTE &kp LG(V)
+#define MAC_CUT &kp LG(X)
+#define MAC_SELECT_ALL &kp LG(A)
 
 
-
-// WORKS FOR ABC EXTENDED
-//#define _ARING_ ROPT(KC_A)
-//#define _OSLSH_ ROPT(KC_O)
-//#define _AELIG_ ROPT(KC_QUOTE)
 //
-//#define _LPARN_ KC_LEFT_PAREN
-//#define _RPARN_ KC_RIGHT_PAREN
-//#define _LCBRC_ KC_LEFT_CURLY_BRACE
-//#define _RCBRC_ KC_RIGHT_CURLY_BRACE
-//#define _LBRAC_ KC_LBRACKET
-//#define _RBRAC_ KC_RBRACKET
-//#define _LABRC_ KC_LEFT_ANGLE_BRACKET
-//#define _RABRC_ KC_RIGHT_ANGLE_BRACKET
 //
-//#define _LEFT__ KC_LEFT
-//#define __UP___ KC_UP
-//#define _DOWN__ KC_DOWN
-//#define _RIGHT_ KC_RIGHT
 //
-//#define n_TABL_ LSFT(LCMD(_LBRAC_))
-//#define n_TABR_ LSFT(LCMD(_RBRAC_))
 //
 //#define _RESET_ RESET
 //
-//#define MAC_UNDO LCMD(KC_Z)
-//#define MAC_REDO LSFT(LCMD(KC_Z))
-//#define MAC_COPY LCMD(KC_C)
-//#define MAC_PASTE LCMD(KC_V)
-//#define MAC_CUT LCMD(KC_X)
-//#define MAC_SELECT_ALL LCMD(KC_A)
 //#define MAC_PASTE_MATCH LSFT(LOPT(LCMD(KC_C)))
 //
 //#define _BRIMN_ KC_F14
