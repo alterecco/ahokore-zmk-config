@@ -46,6 +46,32 @@
 #define ___8___ &kp N8
 #define ___9___ &kp N9
 
+#define __DOT__ &kp DOT
+#define _COMMA_ &kp COMMA
+//#define _SQUOT_ KC_QUOTE
+//#define _DQUOT_ KC_DOUBLE_QUOTE
+//#define _COLON_ KC_COLON
+//#define _SCOLN_ KC_SCOLON
+//#define _TILDE_ LSFT(KC_GRAVE)
+//#define _GRAVE_ KC_GRAVE
+//#define _UNDRS_ KC_UNDERSCORE
+//#define _EQUAL_ KC_EQUAL
+//#define _MINUS_ KC_MINUS
+//#define _PLUS__ KC_PLUS
+//#define _ASTER_ KC_ASTERISK
+//#define _HASH__ KC_HASH
+//#define _DOLLR_ KC_DOLLAR
+//#define _SLASH_ KC_SLASH
+//#define _BSLSH_ KC_BSLASH
+//#define _PERCT_ KC_PERCENT
+//#define _AMPRS_ KC_AMPERSAND
+//#define _QUEST_ KC_QUESTION
+//#define _EXCLM_ KC_EXCLAIM
+//#define _CIRCF_ KC_CIRCUMFLEX
+//#define _PIPE__ LSFT(KC_BSLS)
+//#define __AT___ KC_AT
+//
+
 #define _SPACE_ &kp SPACE
 #define __TAB__ &kp TAB
 #define _ENTER_ &kp ENTER
@@ -72,31 +98,6 @@
 //#define _RBRAC_ KC_RBRACKET
 //#define _LABRC_ KC_LEFT_ANGLE_BRACKET
 //#define _RABRC_ KC_RIGHT_ANGLE_BRACKET
-//
-//#define __DOT__ KC_DOT
-//#define _COMMA_ KC_COMMA
-//#define _SQUOT_ KC_QUOTE
-//#define _DQUOT_ KC_DOUBLE_QUOTE
-//#define _COLON_ KC_COLON
-//#define _SCOLN_ KC_SCOLON
-//#define _TILDE_ LSFT(KC_GRAVE)
-//#define _GRAVE_ KC_GRAVE
-//#define _UNDRS_ KC_UNDERSCORE
-//#define _EQUAL_ KC_EQUAL
-//#define _MINUS_ KC_MINUS
-//#define _PLUS__ KC_PLUS
-//#define _ASTER_ KC_ASTERISK
-//#define _HASH__ KC_HASH
-//#define _DOLLR_ KC_DOLLAR
-//#define _SLASH_ KC_SLASH
-//#define _BSLSH_ KC_BSLASH
-//#define _PERCT_ KC_PERCENT
-//#define _AMPRS_ KC_AMPERSAND
-//#define _QUEST_ KC_QUESTION
-//#define _EXCLM_ KC_EXCLAIM
-//#define _CIRCF_ KC_CIRCUMFLEX
-//#define _PIPE__ LSFT(KC_BSLS)
-//#define __AT___ KC_AT
 //
 //#define _LEFT__ KC_LEFT
 //#define __UP___ KC_UP
