@@ -8,6 +8,16 @@
 #define o_SPC_o &lt SYM SPACE
 #define o_NUM_o &mo NUM
 
+#define h__S__h &hm LEFT_SHIFT S
+#define h__H__h &hm LEFT_CONTROL H
+#define h__N__h &hm LEFT_ALT N
+#define h__T__h &hm LEFT_GUI T
+
+#define h__E__h &hm RIGHT_GUI E
+#define h__A__h &hm RIGHT_ALT A
+#define h__I__h &hm RIGHT_CONTROL I
+#define h__O__h &hm RIGHT_SHIFT O
+
 #define ___A___ &kp A
 #define ___B___ &kp B
 #define ___C___ &kp C
@@ -96,10 +106,10 @@
 #define _BKSPC_ &kp BACKSPACE
 #define __ESC__ &kp ESCAPE
 
-#define _LSHFT_ &sk LEFT_SHIFT
-#define _LCTRL_ &sk LEFT_CONTROL
-#define _LALT__ &sk LEFT_ALT
-#define _LCMD__ &sk LEFT_COMMAND
+#define _LSHFT_ &kp LEFT_SHIFT
+#define _LCTRL_ &kp LEFT_CONTROL
+#define _LALT__ &kp LEFT_ALT
+#define _LCMD__ &kp LEFT_COMMAND
 
 #define o_TABL_ &kp LS(LG(LEFT_BRACKET))
 #define o_TABR_ &kp LS(LG(RIGHT_BRACKET))
