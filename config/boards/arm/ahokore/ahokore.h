@@ -7,7 +7,6 @@
 #define NUM 3
 #define ADJ 4
 
-#define __ESC__ &kp ESC
 
 
 
