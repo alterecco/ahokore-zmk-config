@@ -58,7 +58,7 @@
 #define _LBRAC_ &kp LEFT_BRACKET
 #define _RBRAC_ &kp RIGHT_BRACKET
 #define _LABRC_ &kp LESS_THAN
-#define _RABRC_ &kp MORE_THAN
+#define _RABRC_ &kp GREATER_THAN
 
 #define __DOT__ &kp DOT
 #define _COMMA_ &kp COMMA
