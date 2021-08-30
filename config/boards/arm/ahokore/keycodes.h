@@ -101,8 +101,8 @@
 #define _LALT__ &sk LEFT_ALT
 #define _LCMD__ &sk LEFT_COMMAND
 
-#define o_TABL_ &kp LS(LG(_LBRAC_))
-#define o_TABR_ &kp LS(LG(_RBRAC_))
+#define o_TABL_ &kp LS(LG(LEFT_BRACKET))
+#define o_TABR_ &kp LS(LG(RIGHT_BRACKET))
 
 #define MAC_UNDO &kp LG(Z)
 #define MAC_REDO &kp LS(LG(Z))
