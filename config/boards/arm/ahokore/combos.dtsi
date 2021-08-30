@@ -17,8 +17,9 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
-COMBO(undo, &kp LC(Z), 20 21, BASE)
-COMBO(cut, &kp LC(X), 21 23, BASE)
-COMBO(copy, &kp LC(C), 21 22, BASE)
-COMBO(paste, &kp LC(V), 21 22 23, BASE)
-COMBO(select_all, &kp LC(A), 20 23, BASE)
+COMBO(undo, &kp LG(Z), 20 21, DEF)
+COMBO(redo, &kp LG(LS(Z)), 20 10, DEF)
+COMBO(cut, &kp LG(X), 20 22, DEF)
+COMBO(copy, &kp LG(C), 21 22, DEF)
+COMBO(paste, &kp LG(V), 22 23, DEF)
+COMBO(select_all, &kp LG(A), 20 23, DEF)
