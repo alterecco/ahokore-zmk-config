@@ -8,8 +8,6 @@
 #define ADJ 4
 
 
-
-
 #define NEXT LC(PG_DN)
 #define PREV LC(PG_UP)
 #define SW_APP LG(TAB)
