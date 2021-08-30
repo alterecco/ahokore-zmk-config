@@ -8,16 +8,6 @@
 #define o_SPC_o &lt SYM SPACE
 #define o_NUM_o &mo NUM
 
-#define h__S__h &hm LEFT_SHIFT S
-#define h__H__h &hm LEFT_CONTROL H
-#define h__N__h &hm LEFT_ALT N
-#define h__T__h &hm LEFT_GUI T
-
-#define h__E__h &hm RIGHT_GUI E
-#define h__A__h &hm RIGHT_ALT A
-#define h__I__h &hm RIGHT_CONTROL I
-#define h__O__h &hm RIGHT_SHIFT O
-
 #define ___A___ &kp A
 #define ___B___ &kp B
 #define ___C___ &kp C
