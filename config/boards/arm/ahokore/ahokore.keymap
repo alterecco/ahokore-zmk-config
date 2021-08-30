@@ -19,7 +19,7 @@
 //      flavor = "tap-preferred";
 //      bindings = <&kp>, <&kp>;
 //    };
-    include "mod_taps.dtsi"
+    #include "mod_taps.dtsi"
 
     combos {
       #include "combos.dtsi"
