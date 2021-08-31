@@ -1,0 +1,19 @@
+hm: homerow_mods {
+  compatible = "zmk,behavior-hold-tap";
+  label = "HOMEROW_MODS";
+  #binding-cells = <2>;
+  tapping_term_ms = <300>;
+  flavor = "tap-preferred";
+  bindings = <&kp>, <&kp>;
+};
+
+
+#define o__S__o &hm LEFT_SHIFT S
+#define o__H__o &hm LEFT_CONTROL H
+#define o__N__o &hm LEFT_ALT N
+#define o__T__o &hm LEFT_GUI T
+
+#define o__E__o &hm RIGHT_GUI E
+#define o__A__o &hm RIGHT_ALT A
+#define o__I__o &hm RIGHT_CONTROL I
+#define o__O__o &hm RIGHT_SHIFT O

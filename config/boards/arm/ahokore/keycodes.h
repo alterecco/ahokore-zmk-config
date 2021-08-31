@@ -111,6 +111,10 @@
 #define MAC_CUT &kp LG(X)
 #define MAC_SELECT_ALL &kp LG(A)
 
+#define _BTCLR_ &bt BT_CLR
+#define _BT_00_ &bt BT_SEL 0
+#define _BT_01_ &bt BT_SEL 1
+#define _BT_02_ &bt BT_SEL 2
 
 //
 //
