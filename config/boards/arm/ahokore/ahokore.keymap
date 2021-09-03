@@ -51,7 +51,7 @@
 //r  s  n  d  w   ,| a  e  i  h
 //x  g  l  c  b   -+ u  o  y  kq
 //            t   ␣
-SHNT                 shnshtnoiaeshnta
+
     hdg_layer {
       label = "HDG";
       bindings = <
