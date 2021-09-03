@@ -5,6 +5,7 @@
 #define _______ &none
 
 #define o_NAV_o &mo NAV
+#define x_NAV_x &lt NAV T
 #define o_SPC_o &lt SYM SPACE
 #define o_NUM_o &mo NUM
 

@@ -17,3 +17,13 @@ hm: homerow_mods {
 #define o__A__o &hm RIGHT_ALT A
 #define o__I__o &hm RIGHT_CONTROL I
 #define o__O__o &hm RIGHT_SHIFT O
+
+#define _HMLS  &hm LEFT_SHIFT
+#define _HMLC  &hm LEFT_CONTROL
+#define _HMLA  &hm LEFT_ALT
+#define _HMLG  &hm LEFT_GUI
+
+#define _HMRS  &hm RIGHT_SHIFT
+#define _HMRC  &hm RIGHT_CONTROL
+#define _HMRA  &hm RIGHT_ALT
+#define _HMRG  &hm RIGHT_GUI

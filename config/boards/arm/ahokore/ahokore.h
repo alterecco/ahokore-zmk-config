@@ -3,3 +3,4 @@
 #define NAV 1
 #define SYM 2
 #define NUM 3
+#define HDG 4
