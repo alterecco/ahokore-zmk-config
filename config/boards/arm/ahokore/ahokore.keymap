@@ -10,14 +10,14 @@
 
 / {
 
-  behaviors {
-    #include "homerow_mods.dtsi"
-
-    combos {
-      #include "combos.dtsi"
-    };
+  combos {
+    #include "combos.dtsi"
   };
 
+  behaviors {
+    #include "homerow_mods.dtsi"
+    #include "macros.dtsi"
+  };
 
   keymap {
     compatible = "zmk,keymap";

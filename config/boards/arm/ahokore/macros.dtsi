@@ -1,0 +1,11 @@
+#define str(s) #s
+
+#define MACRO(NAME, BINDINGS) \
+  macro_##NAME: macro_##NAME { \
+    compatible = "zmk,behavior-macro"; \
+    label = str(NAME); \
+    #binding-cells = <0>; \
+    bindings = <BINDINGS>; \
+  };
+
+MACRO(M_PM_LP, &kp L &kp P)
