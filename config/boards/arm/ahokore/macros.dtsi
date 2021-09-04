@@ -8,4 +8,10 @@
     bindings = <BINDINGS>; \
   };
 
-MACRO(M_PM_LP, &kp L &kp P)
+
+macro_pm: macro_pm {
+   compatible = "zmk,behavior-macro";
+   label = "macro_pm";
+   #binding-cells = <0>;
+   bindings = <&kp P>, <&kp L>;
+ };

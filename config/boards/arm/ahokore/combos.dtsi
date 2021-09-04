@@ -48,7 +48,7 @@ COMBO(num_0, ___0___, 33 31, DEF HDG)
 
 
 combo_pm {
-  bindings = <&M_PM_LP>;
+  bindings = <&macro_pm>;
   key-positions = <2 3>;
-    layers = <HDG>;
+  layers = <HDG>;
 };
