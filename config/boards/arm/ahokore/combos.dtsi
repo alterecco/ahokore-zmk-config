@@ -46,4 +46,4 @@ COMBO(num_8, ___8___, 33 2, DEF HDG)
 COMBO(num_9, ___9___, 33 3, DEF HDG)
 COMBO(num_0, ___0___, 33 31, DEF HDG)
 
-COMBO(m_pm, M_PM_LP, 2 3, HDG)
+COMBO(m_pm, &M_PM_LP, 2 3, HDG)
