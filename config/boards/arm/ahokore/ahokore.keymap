@@ -4,6 +4,7 @@
 
 // LAYERS
 #define DEF 0
+#define NUM 1
 
 #define _______ &none
 
@@ -40,6 +41,13 @@
   keymap {
     compatible = "zmk,keymap";
 
+//        _______   _______   _______   _______   _______      _______   _______   _______   _______   _______
+//        _______   _______   _______   _______   _______      _______   _______   _______   _______   _______
+//        _______   _______   _______   _______   _______      _______   _______   _______   _______   _______
+//                            _______   _______   _______      _______   _______   _______
+
+
+
 //jz f  m  p  v   ;: .& /* "? '!
 //r  s  n  d  w   ,| a  e  i  h
 //x  g  l  c  b   -+ u  o  y  kq
@@ -48,10 +56,20 @@
     base_layer {
       label = "DEF";
       bindings = <
-      &kp J   &kp F   &hm LCTRL M   &hm LALT P    &kp V           &kp SEMI    &hm RCTRL DOT   &hm RALT SLASH   &kp DQT   &kp SQT
-      &kp R   &kp S   &hm LCMD N    &hm LSHFT D   &kp W           &kp COMMA   &hm RSHFT A     &hm RCMD E       &kp I     &kp H
-      &kp X   &kp G   &kp L         &kp C         &kp B           &kp MINUS   &kp U           &kp O            &kp Y     &kp K
-                      _______       &kp T         &kp BSPC        &kp RET     &kp SPACE       _______
+        &kp J   &kp F       &hm LCTRL M   &hm LALT P    &kp V           &kp SEMI    &hm RCTRL DOT   &hm RALT SLASH   &kp DQT   &kp SQT
+        &kp R   &hl NUM S   &hm LCMD N    &hm LSHFT D   &kp W           &kp COMMA   &hm RSHFT A     &hm RCMD E       &kp I     &kp H
+        &kp X   &kp G       &kp L         &kp C         &kp B           &kp MINUS   &kp U           &kp O            &kp Y     &kp K
+                            _______       &kp T         &kp BSPC        &kp RET     &kp SPACE       _______
+      >;
+    };
+
+    num_layer {
+      label = "NUM";
+      bindings = <
+        _______   _______   _______   _______   _______      _______   &kp N7    &kp N8    &kp N9    _______
+        _______   _______   _______   _______   _______      &kp N0    &kp N3    &kp N5    &kp N6    _______
+        _______   _______   _______   _______   _______      _______   &kp N1    &kp N2    &kp N3    _______
+                            _______   _______   _______      _______   _______   _______
       >;
     };
   };

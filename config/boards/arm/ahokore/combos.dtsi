@@ -19,6 +19,11 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
+COMBO(kp_up_arrow, &kp UP_ARROW, 7 17, DEF)
+COMBO(kp_down_arrow, &kp DOWN_ARROW, 17 27, DEF)
+COMBO(kp_left_arrow, &kp LEFT_ARROW, 16 17, DEF)
+COMBO(kp_right_arrow, &kp RIGHT_ARROW, 17 18, DEF)
+
 
 
 /*
