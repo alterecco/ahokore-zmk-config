@@ -19,6 +19,9 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
+
+
+/*
 COMBO(kp_q, ___Q___, 1 2, DEF)
 COMBO(kp_b, ___B___, 2 3, DEF)
 COMBO(kp_j, ___J___, 6 7, DEF)
@@ -52,3 +55,4 @@ combo_pm {
   key-positions = <2 3>;
   layers = <HDG>;
 };
+*/
