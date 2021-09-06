@@ -23,6 +23,15 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
+
+    hl: homerow_layers {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HOMEROW_LAYERS";
+      #binding-cells = <2>;
+      tapping_term_ms = <300>;
+      flavor = "tap-preferred";
+      bindings = <&mo>, <&kp>;
+    };
   };
 
   combos {
@@ -48,7 +57,7 @@
       label = "DEF";
       bindings = <
         &kp J   &kp F       &hm LCTRL M   &hm LALT P    &kp V           &kp SEMI    &hm RCTRL DOT   &hm RALT SLASH   &kp DQT   &kp SQT
-        &kp R   &lt NUM S   &hm LCMD N    &hm LSHFT D   &kp W           &kp COMMA   &hm RSHFT A     &hm RCMD E       &kp I     &kp H
+        &kp R   &hl NUM S   &hm LCMD N    &hm LSHFT D   &kp W           &kp COMMA   &hm RSHFT A     &hm RCMD E       &kp I     &kp H
         &kp X   &kp G       &kp L         &kp C         &kp B           &kp MINUS   &kp U           &kp O            &kp Y     &kp K
                             _______       &kp T         &kp BSPC        &kp RET     &kp SPACE       _______
       >;
