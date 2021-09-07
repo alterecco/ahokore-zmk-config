@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include "keycodes.h"
 
 // LAYERS
 #define DEF 0
@@ -100,10 +101,10 @@
     nav_layer {
       label = "NAV";
       bindings = <
-        _______   _______   &kp LCTRL &kp LALT  _______      _______   &kp N7    &kp UP    &kp N9    _______
-        _______   _______   &kp LCMD  &kp LSHFT _______      &kp N0    &kp LEFT  &kp DOWN  &kp RIGHT _______
-        _______   _______   _______   _______   _______      _______   &kp N1    &kp N2    &kp N3    _______
-                            _______   _______   _______      _______   _______   _______
+        _______   _______   &kp LCTRL &kp LALT  _______      _______   _BKSPC_   __UP___   _DLETE_   _______
+        _______   _______   &kp LCMD  &kp LSHFT _______      &kp N0    _LEFT__   _DOWN__   _RIGHT_   _______
+        _______   _______   _______   _______   _______      _______   __TAB__   o_TABL_   o_TABR_   _______
+                            _______   _______   _______      _______   _ENTER_   _______
       >;
     };
 

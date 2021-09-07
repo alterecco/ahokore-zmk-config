@@ -96,6 +96,7 @@
 #define __TAB__ &kp TAB
 #define _ENTER_ &kp ENTER
 #define _BKSPC_ &kp BACKSPACE
+#define _DLETE_ &kp DELETE
 #define __ESC__ &kp ESCAPE
 
 #define _LSHFT_ &kp LEFT_SHIFT
