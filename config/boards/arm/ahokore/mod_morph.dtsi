@@ -1,10 +1,10 @@
 #include "hold_tap.dtsi"
 
-morph_colon_pipe: morph_colon_pipe {
+morph_minus_plus: morph_minus_plus {
   compatible = "zmk,behavior-mod-morph";
-  label = "MORPH_COLON_PIPE";
+  label = "MORPH_MINUS_PLUS";
   #binding-cells = <0>;
-  bindings = <&kp COLON>, <&kp PIPE>;
+  bindings = <&kp MINUS>, <&kp PLUS>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
@@ -16,11 +16,27 @@ morph_comma_underscore: morph_comma_underscore {
   mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
-morph_minus_plus: morph_minus_plus {
+morph_colon_pipe: morph_colon_pipe {
   compatible = "zmk,behavior-mod-morph";
-  label = "MORPH_MINUS_PLUS";
+  label = "MORPH_COLON_PIPE";
   #binding-cells = <0>;
-  bindings = <&kp MINUS>, <&kp PLUS>;
+  bindings = <&kp COLON>, <&kp PIPE>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+
+morph_hmlc_dot_ampersand: morph_hmlc_dot_ampersand {
+  compatible = "zmk,behavior-mod-morph";
+  label = "MORPH_HMCT_DOT_AMPERSAND";
+  #binding-cells = <0>;
+  bindings = <_HMRC DOT>, <&kp AMPERSAND>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+
+morph_slash_star: morph_slash_star {
+  compatible = "zmk,behavior-mod-morph";
+  label = "MORPH_SLASH_STAR";
+  #binding-cells = <0>;
+  bindings = <_HMRO SLASH>, <&kp STAR>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
@@ -37,13 +53,5 @@ morph_dquote_question: morph_dquote_question {
   label = "MORPH_DQUOTE_QUESTION";
   #binding-cells = <0>;
   bindings = <&kp DOUBLE_QUOTES>, <&kp QUESTION>;
-  mods = <(MOD_LSFT|MOD_RSFT)>;
-};
-
-morph_hmlc_dot_ampersand: morph_hmlc_dot_ampersand {
-  compatible = "zmk,behavior-mod-morph";
-  label = "MORPH_HMCT_DOT_AMPERSAND";
-  #binding-cells = <0>;
-  bindings = <&hm LCTRL DOT>, <&kp AMPERSAND>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 };
