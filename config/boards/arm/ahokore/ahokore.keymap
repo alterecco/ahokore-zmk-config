@@ -15,23 +15,7 @@
 / {
 
   behaviors {
-    hm: homerow_mods {
-      compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_MODS";
-      #binding-cells = <2>;
-      tapping_term_ms = <300>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&kp>;
-    };
-
-    hl: homerow_layers {
-      compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_LAYERS";
-      #binding-cells = <2>;
-      tapping_term_ms = <300>;
-      flavor = "tap-preferred";
-      bindings = <&mo>, <&kp>;
-    };
+    #include "hold_tap.dtsi"
 
     r1_c6: r1_c6 {
       compatible = "zmk,behavior-mod-morph";

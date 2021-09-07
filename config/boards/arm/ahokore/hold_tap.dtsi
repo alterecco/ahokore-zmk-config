@@ -1,0 +1,31 @@
+#include "ahokore.h"
+
+hm: hold_tap_mods {
+  compatible = "zmk,behavior-hold-tap";
+  label = "HOLD_TAP_MODS";
+  #binding-cells = <2>;
+  tapping_term_ms = <300>;
+  flavor = "tap-preferred";
+  bindings = <&kp>, <&kp>;
+};
+
+hl: hold_tap_layers {
+  compatible = "zmk,behavior-hold-tap";
+  label = "HOLD_TAP_LAYERS";
+  #binding-cells = <2>;
+  tapping_term_ms = <300>;
+  flavor = "tap-preferred";
+  bindings = <&mo>, <&kp>;
+};
+
+#define _HMLS  &hm LEFT_SHIFT
+#define _HMLC  &hm LEFT_CONTROL
+#define _HMLA  &hm LEFT_ALT
+#define _HMLG  &hm LEFT_GUI
+
+#define _HMRS  &hm RIGHT_SHIFT
+#define _HMRC  &hm RIGHT_CONTROL
+#define _HMRA  &hm RIGHT_ALT
+#define _HMRG  &hm RIGHT_GUI
+
+#define _HLNUM &hl NUM
