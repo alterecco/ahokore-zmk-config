@@ -37,6 +37,14 @@ COMBO(aelig, _AELIG_, 26 27, DEF)
 COMBO(oslsh, _OSLSH_, 27 28, DEF)
 COMBO(aring, _ARING_, 28 29, DEF)
 
+COMBO(left_parenthesis, _LPARN_, 13 16, DEF)
+COMBO(left_brace, _LABRC_, 13 17, DEF)
+COMBO(left_bracket, _LBRAC_, 13 18, DEF)
+COMBO(less_than, _LABRC_, 13 19, DEF)
+COMBO(right_parenthesis, _RPARN_, 13 6, DEF)
+COMBO(right_brace, _RABRC_, 13 7, DEF)
+COMBO(right_bracket, _RBRAC_, 13 8, DEF)
+COMBO(more_than, _RABRC_, 13 9, DEF)
 
 
 /*

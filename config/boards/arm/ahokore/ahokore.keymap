@@ -8,15 +8,6 @@
 #define NAV 1
 #define NUM 2
 
-#define _______ &none
-
-#define MAC_UNDO &kp LG(Z)
-#define MAC_REDO &kp LS(LG(Z))
-#define MAC_COPY &kp LG(C)
-#define MAC_PASTE &kp LG(V)
-#define MAC_CUT &kp LG(X)
-#define MAC_SELECT_ALL &kp LG(A)
-
 &sk {
   release-after-ms = <2000>;
 };
@@ -91,17 +82,17 @@
     base_layer {
       label = "DEF";
       bindings = <
-        &kp J   &kp F       &hm LALT M    &hm LCTRL P    &kp V           &r1_c6     &r1_c7       &hm RALT SLASH   &kp DQT   &kp SQT
+        &kp J   &kp F       &hm LALT M    &hm LCTRL P   &kp V           &r1_c6      &r1_c7      &hm RALT SLASH   &kp DQT   &kp SQT
         &kp R   &lt NUM S   &hm LCMD N    &kp D         &kp W           &r2_c6      &kp A       &hm RCMD E       &kp I     &kp H
         &kp X   &kp G       &kp L         &kp C         &kp B           &r3_c6      &kp U       &kp O            &kp Y     &kp K
-                            _______       &kp T         &mo NAV         &kp LSHFT   &kp SPACE   _______
+                            _______       &kp T         &mo NAV         &sk LSHFT   &kp SPACE   _______
       >;
     };
 
     nav_layer {
       label = "NAV";
       bindings = <
-        _______   &kp LCTRL &kp LALT  &kp LCTRL _______      _______   _______   __UP___   _DLETE_   _______
+        _______   &kp LCTRL &kp LALT  &kp LCTRL _______      _______   _______   __UP___   __DEL__   _______
         _______   _______   &kp LCMD  &kp LSHFT _______      _______   _LEFT__   _DOWN__   _RIGHT_   _______
         _______   _______   _______   _______   _______      _______   __TAB__   o_TABL_   o_TABR_   _______
                             _______   _______   _______      _BKSPC_   _ENTER_   _______
@@ -111,8 +102,8 @@
     num_layer {
       label = "NUM";
       bindings = <
-        _______   _______   _______   _______   _______      _______   &kp N7    &kp N8    &kp N9    _______
-        _______   _______   _______   _______   _______      &kp N0    &kp N3    &kp N5    &kp N6    _______
+        _______   &kp LCTRL &kp LALT  &kp LCTRL _______      _______   &kp N7    &kp N8    &kp N9    _______
+        _______   _______   &kp LCMD  &kp LSHFT _______      &kp N0    &kp N3    &kp N5    &kp N6    _______
         _______   _______   _______   _______   _______      _______   &kp N1    &kp N2    &kp N3    _______
                             _______   _______   _______      _______   _______   _______
       >;
