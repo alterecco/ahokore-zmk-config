@@ -32,6 +32,14 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
+
+    colon_m: colon_m {
+      compatible = "zmk,behavior-mod-morph";
+      label = "MORPH_COLON";
+      #binding-cells = <0>;
+      bindings = <&kp COLON>, <&kp SEMI>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
   };
 
   combos {
@@ -60,7 +68,8 @@
         &kp S   &lt NUM H   &hm LCMD N    &hm LSHFT T   &kp COMMA       &kp DOT     &hm RSHFT E     &hm RCMD A       &kp I     &kp O
         &kp F   &kp M       &kp V         &kp C         &none           &none       &kp P           &kp X            &kp K     &kp Y
                             &mo NUM       &kp T         &kp BSPC        &kp RET     &kp SPACE       _______
-//        &kp J   &kp F       &hm LCTRL M   &hm LALT P    &kp V           &kp SEMI    &hm RCTRL DOT   &hm RALT SLASH   &kp DQT   &kp SQT
+
+//        &kp J   &kp F       &hm LCTRL M   &hm LALT P    &kp V           &colon_m    &hm RCTRL DOT   &hm RALT SLASH   &kp DQT   &kp SQT
 //        &kp R   &lt NUM S   &hm LCMD N    &hm LSHFT D   &kp W           &kp COMMA   &hm RSHFT A     &hm RCMD E       &kp I     &kp H
 //        &kp X   &kp G       &kp L         &kp C         &kp B           &kp MINUS   &kp U           &kp O            &kp Y     &kp K
 //                            &mo NUM       &kp T         &kp BSPC        &kp RET     &kp SPACE       _______
