@@ -1,0 +1,33 @@
+#include "hold_tap.dtsi"
+
+morph_colon_pipe: morph_colon_pipe {
+  compatible = "zmk,behavior-mod-morph";
+  label = "MORPH_COLON_PIPE";
+  #binding-cells = <0>;
+  bindings = <&kp COLON>, <&kp PIPE>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+
+morph_comma_underscore: morph_comma_underscore {
+  compatible = "zmk,behavior-mod-morph";
+  label = "MORPH_COMMA_UNDERSCORE";
+  #binding-cells = <0>;
+  bindings = <&kp COMMA>, <&kp UNDERSCORE>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+
+morph_minus_plus: morph_minus_plus {
+  compatible = "zmk,behavior-mod-morph";
+  label = "MORPH_MINUS_PLUS";
+  #binding-cells = <0>;
+  bindings = <&kp MINUS>, <&kp PLUS>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+
+morph_hmlc_dot_ampersand: morph_hmlc_dot_ampersand {
+  compatible = "zmk,behavior-mod-morph";
+  label = "MORPH_HMCT_DOT_AMPERSAND";
+  #binding-cells = <0>;
+  bindings = <&hm LCTRL DOT>, <&kp AMPERSAND>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+};

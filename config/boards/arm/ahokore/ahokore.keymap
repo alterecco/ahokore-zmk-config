@@ -1,12 +1,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include "ahokore.h"
 #include "keycodes.h"
-
-// LAYERS
-#define DEF 0
-#define NAV 1
-#define NUM 2
 
 &sk {
   release-after-ms = <2000>;
@@ -111,7 +107,7 @@
         _______   &kp LCTRL &kp LALT  &kp LCTRL _______      _______   &kp N7    &kp N8    &kp N9    _______
         _______   _______   &kp LCMD  &kp LSHFT _______      &kp N0    &kp N3    &kp N5    &kp N6    _______
         _______   _______   _______   _______   _______      _______   &kp N1    &kp N2    &kp N3    _______
-                            _______   _______   _______      _______   &kp SPACE _______
+                            _______   _______   _______      &kp SPACE _______    _______
       >;
     };
   };
