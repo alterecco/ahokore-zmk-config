@@ -85,17 +85,17 @@
         &kp J   &kp F       &hm LALT M    &hm LCTRL P   &kp V           &r1_c6      &r1_c7       &hm RALT SLASH   &kp DQT   &kp SQT
         &kp R   &hl NUM S   &hm LCMD N    &hm LSHFT D   &kp W           &r2_c6      &hm LSHFT A  &hm RCMD E       &kp I     &kp H
         &kp X   &kp G       &kp L         &kp C         &kp B           &r3_c6      &kp U        &kp O            &kp Y     &kp K
-                            _______       &hl NAV T     &sk LSHFT       &sk LSHFT   &kp SPACE    _______
+                            _______       &sk LSHFT     &hl NAV T       &kp SPACE   &sk LSHFT    _______
       >;
     };
 
     nav_layer {
       label = "NAV";
       bindings = <
-        _______   &kp LCTRL &kp LALT  &kp LCTRL _______      _______   _______   __UP___   __DEL__   _______
+        _______   &kp LCTRL &kp LALT  &kp LCTRL _______      _______   _BKSPC_   __UP___   __DEL__   _______
         _______   _______   &kp LCMD  &kp LSHFT _______      _______   _LEFT__   _DOWN__   _RIGHT_   _______
         _______   _______   _______   _______   _______      _______   __TAB__   o_TABL_   o_TABR_   _______
-                            _______   _______   _______      _BKSPC_   _ENTER_   _______
+                            _______   _______   _______      _______   _ENTER_   _______
       >;
     };
 
