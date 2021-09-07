@@ -33,6 +33,12 @@ COMBO(backspace, _BKSPC_, 12 13, DEF)
 COMBO(tab_left, o_TABL_, 6 7, DEF)
 COMBO(tab_right, o_TABR_, 7 8, DEF)
 
+COMBO(aelig, _AELIG_, 26 27, DEF)
+COMBO(oslsh, _OSLSH_, 27 28, DEF)
+COMBO(aring, _ARING_, 28 29, DEF)
+
+
+
 /*
 COMBO(kp_q, ___Q___, 1 2, DEF)
 COMBO(kp_b, ___B___, 2 3, DEF)

@@ -91,20 +91,20 @@
     base_layer {
       label = "DEF";
       bindings = <
-        &kp J   &kp F       &hm LCTRL M   &hm LALT P    &kp V           &r1_c6      &hm RCTRL DOT   &hm RALT SLASH   &kp DQT   &kp SQT
-        &kp R   &lt NUM S   &hm LCMD N    &kp D         &kp W           &r2_c6      &kp A           &hm RCMD E       &kp I     &kp H
-        &kp X   &kp G       &kp L         &kp C         &kp B           &r3_c6      &kp U           &kp O            &kp Y     &kp K
-                            _______       &kp T         &mo NAV         &kp LSHFT   &kp SPACE       _______
+        &kp J   &kp F       &hm LALT M    &hm LCTRL P    &kp V           &r1_c6      r1_c7       &hm RALT SLASH   &kp DQT   &kp SQT
+        &kp R   &lt NUM S   &hm LCMD N    &kp D         &kp W           &r2_c6      &kp A       &hm RCMD E       &kp I     &kp H
+        &kp X   &kp G       &kp L         &kp C         &kp B           &r3_c6      &kp U       &kp O            &kp Y     &kp K
+                            _______       &kp T         &mo NAV         &kp LSHFT   &kp SPACE   _______
       >;
     };
 
     nav_layer {
       label = "NAV";
       bindings = <
-        _______   _______   &kp LCTRL &kp LALT  _______      _______   _BKSPC_   __UP___   _DLETE_   _______
-        _______   _______   &kp LCMD  &kp LSHFT _______      &kp N0    _LEFT__   _DOWN__   _RIGHT_   _______
+        _______   &kp LCTRL &kp LALT  &kp LCTRL _______      _______   _______   __UP___   _DLETE_   _______
+        _______   _______   &kp LCMD  &kp LSHFT _______      _______   _LEFT__   _DOWN__   _RIGHT_   _______
         _______   _______   _______   _______   _______      _______   __TAB__   o_TABL_   o_TABR_   _______
-                            _______   _______   _______      _______   _ENTER_   _______
+                            _______   _______   _______      _BKSPC_   _ENTER_   _______
       >;
     };
 
