@@ -38,16 +38,16 @@ COMBO(paste, MAC_PASTE, 22 23, DEF)
 COMBO(select_all, MAC_SELECT_ALL, 20 23, DEF)
 
 COMBO(enter, _ENTER_, 16 17, DEF)
-COMBO(backspace, _BKSPC_, 12 13, DEF)
-COMBO(tab, __TAB__, 15 16, DEF)
+COMBO(backspace, _BKSPC_, 6 7, DEF)
+COMBO(tab, __TAB__, 26 27, DEF)
 COMBO(escape, __ESC__, 11 12, DEF)
 
-COMBO(tab_left, o_TABL_, 6 7, DEF)
-COMBO(tab_right, o_TABR_, 7 8, DEF)
+//COMBO(tab_left, o_TABL_, 6 7, DEF)
+//COMBO(tab_right, o_TABR_, 7 8, DEF)
 
-COMBO(aelig, _AELIG_, 26 27, DEF)
-COMBO(oslsh, _OSLSH_, 27 28, DEF)
-COMBO(aring, _ARING_, 28 29, DEF)
+//COMBO(aelig, _AELIG_, 26 27, DEF)
+//COMBO(oslsh, _OSLSH_, 27 28, DEF)
+//COMBO(aring, _ARING_, 28 29, DEF)
 
 COMBO(left_parenthesis, _LPARN_, 13 16, DEF)
 COMBO(left_brace, _LABRC_, 13 17, DEF)

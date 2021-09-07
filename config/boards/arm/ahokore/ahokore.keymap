@@ -83,7 +83,7 @@
       label = "DEF";
       bindings = <
         &kp J   &kp F       &hm LALT M    &hm LCTRL P   &kp V           &r1_c6      &r1_c7       &hm RALT SLASH   &kp DQT   &kp SQT
-        &kp R   &lt NUM S   &hm LCMD N    &hm LSHFT D   &kp W           &r2_c6      &hm LSHFT A  &hm RCMD E       &kp I     &kp H
+        &kp R   &hl NUM S   &hm LCMD N    &hm LSHFT D   &kp W           &r2_c6      &hm LSHFT A  &hm RCMD E       &kp I     &kp H
         &kp X   &kp G       &kp L         &kp C         &kp B           &r3_c6      &kp U        &kp O            &kp Y     &kp K
                             _______       &kp T         &mo NAV         &sk LSHFT   &kp SPACE    _______
       >;
