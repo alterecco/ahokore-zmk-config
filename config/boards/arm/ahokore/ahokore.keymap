@@ -100,7 +100,7 @@
 
     nav_layer {
       label = "NAV";
-      bindings = <t
+      bindings = <
         _______  _LCTRL_  _LOPT__  _LCTRL_  _______    _______  _BKSPC_  __UP___  __DEL__  _______
         _______  _______  _LCMD__  _LSHFT_  _______    _______  _LEFT__  _DOWN__  _RIGHT_  _______
         _______  _______  _______  _______  _______    _______  __TAB__  o_TABL_  o_TABR_  _______
