@@ -24,15 +24,15 @@ morph_colon_pipe: morph_colon_pipe {
   mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
-morph_hmlc_dot_ampersand: morph_hmlc_dot_ampersand {
+morph_hmrc_dot_ampersand: morph_hmrc_dot_ampersand {
   compatible = "zmk,behavior-mod-morph";
-  label = "MORPH_HMCT_DOT_AMPERSAND";
+  label = "MORPH_HMRC_DOT_AMPERSAND";
   #binding-cells = <0>;
   bindings = <_HMRC DOT>, <&kp AMPERSAND>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
-morph_slash_star: morph_slash_star {
+morph_hmro_slash_star: morph_hmro_slash_star {
   compatible = "zmk,behavior-mod-morph";
   label = "MORPH_SLASH_STAR";
   #binding-cells = <0>;
