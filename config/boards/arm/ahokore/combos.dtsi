@@ -19,6 +19,16 @@ compatible = "zmk,combos";
           ╰────────────╯ ╰────────────╯
 */
 
+COMBO(num_1, ___1___, 11 26, DEF)
+COMBO(num_2, ___2___, 11 27, DEF)
+COMBO(num_3, ___3___, 11 28, DEF)
+COMBO(num_4, ___4___, 11 16, DEF)
+COMBO(num_5, ___5___, 11 17, DEF)
+COMBO(num_6, ___6___, 11 18, DEF)
+COMBO(num_7, ___7___, 11 6, DEF)
+COMBO(num_8, ___8___, 11 7, DEF)
+COMBO(num_9, ___9___, 11 8, DEF)
+COMBO(num_0, ___0___, 11 15, DEF)
 
 COMBO(undo, MAC_UNDO, 20 21, DEF)
 COMBO(redo, MAC_REDO, 20 10, DEF)
@@ -29,6 +39,8 @@ COMBO(select_all, MAC_SELECT_ALL, 20 23, DEF)
 
 COMBO(enter, _ENTER_, 16 17, DEF)
 COMBO(backspace, _BKSPC_, 12 13, DEF)
+COMBO(tab, __TAB__, 15 16, DEF)
+COMBO(escape, __ESC__, 11 12, DEF)
 
 COMBO(tab_left, o_TABL_, 6 7, DEF)
 COMBO(tab_right, o_TABR_, 7 8, DEF)
