@@ -37,7 +37,7 @@
       compatible = "zmk,behavior-mod-morph";
       label = "MORPH_COLON";
       #binding-cells = <0>;
-      bindings = <&kp COLON>, <&kp SEMI>;
+      bindings = <&kp COLON>, <&kp PIPE>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
   };
