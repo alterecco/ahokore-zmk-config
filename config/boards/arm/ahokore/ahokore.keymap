@@ -4,7 +4,8 @@
 
 // LAYERS
 #define DEF 0
-#define NUM 1
+#define NAV 1
+#define NUM 2
 
 #define _______ &none
 
@@ -63,6 +64,14 @@
       bindings = <&kp MINUS>, <&kp PLUS>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+
+    r1_c7: r1_c7 {
+      compatible = "zmk,behavior-mod-morph";
+      label = "r1_c7";
+      #binding-cells = <0>;
+      bindings = <&kp DOT>, <&kp AMPERSAND>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
   };
 
   combos {
@@ -84,9 +93,20 @@
         &kp J   &kp F       &hm LCTRL M   &hm LALT P    &kp V           &r1_c6      &hm RCTRL DOT   &hm RALT SLASH   &kp DQT   &kp SQT
         &kp R   &lt NUM S   &hm LCMD N    &hm LSHFT D   &kp W           &r2_c6      &hm RSHFT A     &hm RCMD E       &kp I     &kp H
         &kp X   &kp G       &kp L         &kp C         &kp B           &r3_c6      &kp U           &kp O            &kp Y     &kp K
-                            &mo NUM       &kp T         &kp BSPC        &kp RET     &kp SPACE       _______
+                            _______       &kp T         &mo NAV         &kp RET     &kp SPACE       _______
       >;
     };
+
+    nav_layer {
+      label = "NAV";
+      bindings = <
+        _______   _______   _______   _______   _______      _______   &kp N7    &kp UP    &kp N9    _______
+        _______   _______   _______   _______   _______      &kp N0    &kp LEFT  &kp DOWN  &kp RIGHT _______
+        _______   _______   _______   _______   _______      _______   &kp N1    &kp N2    &kp N3    _______
+                            _______   _______   _______      _______   _______   _______
+      >;
+    };
+  };
 
     num_layer {
       label = "NUM";
