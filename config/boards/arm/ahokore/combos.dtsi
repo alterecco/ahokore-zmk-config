@@ -19,10 +19,6 @@ compatible = "zmk,combos";
           ╰────────────╯ ╰────────────╯
 */
 
-COMBO(kp_up_arrow, &kp UP_ARROW, 13 7, DEF)
-COMBO(kp_down_arrow, &kp DOWN_ARROW, 13 17, DEF)
-COMBO(kp_left_arrow, &kp LEFT_ARROW, 13 16, DEF)
-COMBO(kp_right_arrow, &kp RIGHT_ARROW, 13 18, DEF)
 
 COMBO(undo, MAC_UNDO, 20 21, DEF)
 COMBO(redo, MAC_REDO, 20 10, DEF)
@@ -31,8 +27,11 @@ COMBO(cut, MAC_CUT, 21 23, DEF)
 COMBO(paste, MAC_PASTE, 22 23, DEF)
 COMBO(select_all, MAC_SELECT_ALL, 20 23, DEF)
 
-COMBO(tab_left, o_TABL_, 13 6, DEF)
-COMBO(tab_right, o_TABR_, 13 8, DEF)
+COMBO(enter, _ENTER_, 16 17, DEF)
+COMBO(backspace, _BKSPC_, 12 13, DEF)
+
+COMBO(tab_left, o_TABL_, 6 7, DEF)
+COMBO(tab_right, o_TABR_, 7 8, DEF)
 
 /*
 COMBO(kp_q, ___Q___, 1 2, DEF)
