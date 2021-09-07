@@ -8,6 +8,13 @@
 
 #define _______ &none
 
+#define MAC_UNDO &kp LG(Z)
+#define MAC_REDO &kp LS(LG(Z))
+#define MAC_COPY &kp LG(C)
+#define MAC_PASTE &kp LG(V)
+#define MAC_CUT &kp LG(X)
+#define MAC_SELECT_ALL &kp LG(A)
+
 &sk {
   release-after-ms = <2000>;
 };
@@ -33,11 +40,27 @@
       bindings = <&mo>, <&kp>;
     };
 
-    colon_m: colon_m {
+    r1_c6: r1_c6 {
       compatible = "zmk,behavior-mod-morph";
-      label = "MORPH_COLON";
+      label = "r1_c6";
       #binding-cells = <0>;
       bindings = <&kp COLON>, <&kp PIPE>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    r2_c6: r2_c6 {
+      compatible = "zmk,behavior-mod-morph";
+      label = "r2_c6";
+      #binding-cells = <0>;
+      bindings = <&kp COMMA>, <&kp UNDERSCORE>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    r3_c6: r3_c6 {
+      compatible = "zmk,behavior-mod-morph";
+      label = "r3_c6";
+      #binding-cells = <0>;
+      bindings = <&kp MINUS>, <&kp PLUS>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
   };
@@ -55,18 +78,12 @@
 //                            _______   _______   _______      _______   _______   _______
 
 
-
-//jz f  m  p  v   ;: .& /* "? '!
-//r  s  n  d  w   ,| a  e  i  h
-//x  g  l  c  b   -+ u  o  y  kq
-//            t   ␣
-
     base_layer {
       label = "DEF";
       bindings = <
-        &kp J   &kp F       &hm LCTRL M   &hm LALT P    &kp V           &colon_m    &hm RCTRL DOT   &hm RALT SLASH   &kp DQT   &kp SQT
-        &kp R   &lt NUM S   &hm LCMD N    &hm LSHFT D   &kp W           &kp COMMA   &hm RSHFT A     &hm RCMD E       &kp I     &kp H
-        &kp X   &kp G       &kp L         &kp C         &kp B           &kp MINUS   &kp U           &kp O            &kp Y     &kp K
+        &kp J   &kp F       &hm LCTRL M   &hm LALT P    &kp V           &r1_c6      &hm RCTRL DOT   &hm RALT SLASH   &kp DQT   &kp SQT
+        &kp R   &lt NUM S   &hm LCMD N    &hm LSHFT D   &kp W           &r2_c6      &hm RSHFT A     &hm RCMD E       &kp I     &kp H
+        &kp X   &kp G       &kp L         &kp C         &kp B           &r3_c6      &kp U           &kp O            &kp Y     &kp K
                             &mo NUM       &kp T         &kp BSPC        &kp RET     &kp SPACE       _______
       >;
     };
