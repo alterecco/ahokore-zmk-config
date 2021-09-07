@@ -64,7 +64,7 @@
     base_layer {
       label = "DEF";
       bindings = <
-        &kp Q   &kp L       &hm LCTRL R   &hm LALT W    &kp B           &kp J       &hm RCTRL G     &hm RALT U       &kp D     &kp Z
+        &kp Q   &kp L       &hm LCTRL R   &hm LALT W    &kp B           &colon_m    &hm RCTRL G     &hm RALT U       &kp D     &kp Z
         &kp S   &lt NUM H   &hm LCMD N    &hm LSHFT T   &kp COMMA       &kp DOT     &hm RSHFT E     &hm RCMD A       &kp I     &kp O
         &kp F   &kp M       &kp V         &kp C         &none           &none       &kp P           &kp X            &kp K     &kp Y
                             &mo NUM       &kp T         &kp BSPC        &kp RET     &kp SPACE       _______
