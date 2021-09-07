@@ -57,6 +57,17 @@
   keymap {
     compatible = "zmk,keymap";
 
+    #define _LEFT__ &kp LEFT
+    #define __UP___ &kp UP
+    #define _DOWN__ &kp DOWN
+    #define _RIGHT_ &kp RIGHT
+
+    #define _SPACE_ &kp SPACE
+    #define __TAB__ &kp TAB
+    #define _ENTER_ &kp ENTER
+    #define _BKSPC_ &kp BACKSPACE
+    #define __DEL__ &kp DELETE
+
 //        _______   _______   _______   _______   _______      _______   _______   _______   _______   _______
 //        _______   _______   _______   _______   _______      _______   _______   _______   _______   _______
 //        _______   _______   _______   _______   _______      _______   _______   _______   _______   _______
@@ -69,7 +80,7 @@
         &kp J   &kp F       &hm LALT M    &hm LCTRL P   &kp V           &r1_c6      &r1_c7       &hm RALT SLASH   &kp DQT   &kp SQT
         &kp R   &hl NUM S   &hm LCMD N    &hm LSHFT D   &kp W           &r2_c6      &hm LSHFT A  &hm RCMD E       &kp I     &kp H
         &kp X   &kp G       &kp L         &kp C         &kp B           &r3_c6      &kp U        &kp O            &kp Y     &kp K
-                            _______       &sk LSHFT     &hl NAV T       &kp SPACE   &sk LSHFT    _______
+                            _______       &sk LSHFT     &hl NAV T       _SPACE_     &sk LSHFT    _______
       >;
     };
 
@@ -89,7 +100,7 @@
         _______   &kp LCTRL &kp LALT  &kp LCTRL _______      _______   &kp N7    &kp N8    &kp N9    _______
         _______   _______   &kp LCMD  &kp LSHFT _______      &kp N0    &kp N3    &kp N5    &kp N6    _______
         _______   _______   _______   _______   _______      _______   &kp N1    &kp N2    &kp N3    _______
-                            _______   _______   _______      &kp SPACE _______    _______
+                            _______   _______   _______      _SPACE_   _______    _______
       >;
     };
   };
