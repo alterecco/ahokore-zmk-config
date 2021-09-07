@@ -64,6 +64,28 @@
       bindings = <&hm LCTRL DOT>, <&kp AMPERSAND>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+
+    macro_lp: macro_lp {
+      compatible = "zmk,behavior-macro";
+      label = "macro_lp";
+      #binding-cells = <0>;
+      bindings = <&kp L>, <&kp P>;
+    };
+
+    macro_lf: macro_lf {
+      compatible = "zmk,behavior-macro";
+      label = "macro_lf";
+      #binding-cells = <0>;
+      bindings = <&kp L>, <&kp F>;
+    };
+
+    macro_qu: macro_qu {
+      compatible = "zmk,behavior-macro";
+      label = "macro_qu";
+      #binding-cells = <0>;
+      bindings = <&kp Q>, <&kp U>;
+    };
+
   };
 
   combos {

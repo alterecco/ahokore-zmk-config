@@ -31,6 +31,7 @@ COMBO(enter, _ENTER_, 16 17, DEF NAV NUM)
 COMBO(backspace, _BKSPC_, 6 7, DEF NAV NUM)
 COMBO(tab, __TAB__, 26 27, DEF NAV NUM)
 COMBO(escape, __ESC__, 0 1, DEF NAV NUM)
+COMBO(delete, __DEL__, 7 8, DEF NAV NUM)
 
 COMBO(left_parenthesis, _LPARN_, 13 16, DEF)
 COMBO(left_brace, _LBRAC_, 13 17, DEF)
@@ -58,6 +59,24 @@ COMBO(num_7, ___7___, 11 6, DEF)
 COMBO(num_8, ___8___, 11 7, DEF)
 COMBO(num_9, ___9___, 11 8, DEF)
 COMBO(num_0, ___0___, 11 15, DEF)
+
+COMBO(combo_z, ___Z___, 3 4, DEF)
+COMBO(combo_q, ___Q___, 29 26, DEF)
+combo_lf {
+  bindings = <&macro_lf>;
+  key-positions = <1 2>;
+  layers = <DEF>;
+};
+combo_lp {
+  bindings = <&macro_lp>;
+  key-positions = <2 3>;
+  layers = <DEF>;
+};
+combo_qu {
+  bindings = <&macro_qu>;
+  key-positions = <26 28>;
+  layers = <DEF>;
+};
 
 /*
 COMBO(kp_q, ___Q___, 1 2, DEF)
@@ -88,9 +107,4 @@ COMBO(num_9, ___9___, 33 3, DEF HDG)
 COMBO(num_0, ___0___, 33 31, DEF HDG)
 
 
-combo_pm {
-  bindings = <&macro_pm>;
-  key-positions = <2 3>;
-  layers = <HDG>;
-};
 */
