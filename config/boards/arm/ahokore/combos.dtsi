@@ -18,6 +18,12 @@ compatible = "zmk,combos";
   ╰───────╮ 30  31  32 │ │ 33  34  35 ╭───────╯
           ╰────────────╯ ╰────────────╯
 */
+COMBO(tab_left, o_TABL_, 27 28, DEF)
+COMBO(tab_right, o_TABR_, 28 29, DEF
+
+COMBO(aelig, _AELIG_, 8 9, DEF)
+COMBO(oslsh, _OSLSH_, 9 19, DEF)
+COMBO(aring, _ARING_, 19 29, DEF)
 
 COMBO(num_1, ___1___, 11 26, DEF)
 COMBO(num_2, ___2___, 11 27, DEF)
@@ -37,17 +43,10 @@ COMBO(cut, MAC_CUT, 21 23, DEF)
 COMBO(paste, MAC_PASTE, 22 23, DEF)
 COMBO(select_all, MAC_SELECT_ALL, 20 23, DEF)
 
-COMBO(enter, _ENTER_, 16 17, DEF)
-COMBO(backspace, _BKSPC_, 6 7, DEF)
-COMBO(tab, __TAB__, 26 27, DEF)
-COMBO(escape, __ESC__, 11 12, DEF)
-
-//COMBO(tab_left, o_TABL_, 6 7, DEF)
-//COMBO(tab_right, o_TABR_, 7 8, DEF)
-
-//COMBO(aelig, _AELIG_, 26 27, DEF)
-//COMBO(oslsh, _OSLSH_, 27 28, DEF)
-//COMBO(aring, _ARING_, 28 29, DEF)
+COMBO(enter, _ENTER_, 16 17, DEF NAV)
+COMBO(backspace, _BKSPC_, 6 7, DEF NAV)
+COMBO(tab, __TAB__, 26 27, DEF NAV)
+COMBO(escape, __ESC__, 0 1, DEF NAV)
 
 COMBO(left_parenthesis, _LPARN_, 13 16, DEF)
 COMBO(left_brace, _LBRAC_, 13 17, DEF)
