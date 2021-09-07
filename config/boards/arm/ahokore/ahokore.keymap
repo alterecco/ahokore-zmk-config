@@ -12,42 +12,8 @@
 
   behaviors {
     #include "hold_tap.dtsi"
-    //#include "mod_morph.dtsi"
+    #include "mod_morph.dtsi"
     #include "macros.dtsi"
-
-    r1_c6: r1_c6 {
-      compatible = "zmk,behavior-mod-morph";
-      label = "r1_c6";
-      #binding-cells = <0>;
-      bindings = <&kp COLON>, <&kp PIPE>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    r2_c6: r2_c6 {
-      compatible = "zmk,behavior-mod-morph";
-      label = "r2_c6";
-      #binding-cells = <0>;
-      bindings = <&kp COMMA>, <&kp UNDERSCORE>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    r3_c6: r3_c6 {
-      compatible = "zmk,behavior-mod-morph";
-      label = "r3_c6";
-      #binding-cells = <0>;
-      bindings = <&kp MINUS>, <&kp PLUS>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    r1_c7: r1_c7 {
-      compatible = "zmk,behavior-mod-morph";
-      label = "r1_c7";
-      #binding-cells = <0>;
-      bindings = <&hm LCTRL DOT>, <&kp AMPERSAND>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-
   };
 
   combos {
