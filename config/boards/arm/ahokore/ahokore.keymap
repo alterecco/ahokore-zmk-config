@@ -50,7 +50,6 @@
     #define ___N___ _HMLG N
     #define ___O___ &kp O
     #define ___P___ _HMLC P
-    #define ___Q___ &kp Q
     #define ___R___ &kp R
     #define ___S___ HLNUM S
     #define ___T___ HLNAV T
@@ -59,7 +58,6 @@
     #define ___W___ &kp W
     #define ___X___ &kp X
     #define ___Y___ &kp Y
-    #define ___Z___ &kp Z
 
     #define _COMMA_ &morph_comma_underscore
     #define _MINUS_ &morph_minus_plus
@@ -69,45 +67,54 @@
     #define _SQUOT_ &morph_squote_exclamation
     #define _DQUOT_ &morph_dquote_question
 
-
     #define _LSHFT_ &sk LEFT_SHIFT
     #define _LCTRL_ &sk LEFT_CONTROL
     #define _LOPT__ &sk LEFT_ALT
     #define _LCMD__ &sk LEFT_COMMAND
 
-//        _______  _______  _______  _______  _______      _______  _______  _______  _______  _______
-//        _______  _______  _______  _______  _______      _______  _______  _______  _______  _______
-//        _______  _______  _______  _______  _______      _______  _______  _______  _______  _______
-//                          _______  _______  _______      _______  _______  _______
+    #define ___0___ &kp N0
+    #define ___1___ &kp N1
+    #define ___2___ &kp N2
+    #define ___3___ &kp N3
+    #define ___4___ &kp N4
+    #define ___5___ &kp N5
+    #define ___6___ &kp N6
+    #define ___7___ &kp N7
+    #define ___8___ &kp N8
+    #define ___9___ &kp N9
 
+//        _______  _______  _______  _______  _______    _______  _______  _______  _______  _______
+//        _______  _______  _______  _______  _______    _______  _______  _______  _______  _______
+//        _______  _______  _______  _______  _______    _______  _______  _______  _______  _______
+//                          _______  _______  _______    _______  _______  _______
 
     base_layer {
       label = "DEF";
       bindings = <
-        ___J___  ___F___  ___M___  ___P___  ___V___      _COLON_  __DOT__  _SLASH_  _SQUOT_  _DQUOT_
-        ___R___  ___S___  ___N___  ___D___  ___W___      _COMMA_  ___A___  ___E___  ___I___  ___H___
-        ___X___  ___G___  ___L___  ___C___  ___B___      _MINUS_  ___U___  ___O___  ___Y___  ___K___
-                          _______  _LSHFT_  ___T___      _SPACE_  _LSHFT_  _______
+        ___J___  ___F___  ___M___  ___P___  ___V___    _COLON_  __DOT__  _SLASH_  _SQUOT_  _DQUOT_
+        ___R___  ___S___  ___N___  ___D___  ___W___    _COMMA_  ___A___  ___E___  ___I___  ___H___
+        ___X___  ___G___  ___L___  ___C___  ___B___    _MINUS_  ___U___  ___O___  ___Y___  ___K___
+                          _______  _LSHFT_  ___T___    _SPACE_  _LSHFT_  _______
       >;
     };
 
     nav_layer {
       label = "NAV";
-      bindings = <
-        _______   _LCTRL_   _LOPT__   _LCTRL_   _______      _______   _BKSPC_   __UP___   __DEL__   _______
-        _______   _______   _LCMD__   _LSHFT_   _______      _______   _LEFT__   _DOWN__   _RIGHT_   _______
-        _______   _______   _______   _______   _______      _______   __TAB__   o_TABL_   o_TABR_   _______
-                            _______   _______   _______      _______   _ENTER_   _______
+      bindings = <t
+        _______  _LCTRL_  _LOPT__  _LCTRL_  _______    _______  _BKSPC_  __UP___  __DEL__  _______
+        _______  _______  _LCMD__  _LSHFT_  _______    _______  _LEFT__  _DOWN__  _RIGHT_  _______
+        _______  _______  _______  _______  _______    _______  __TAB__  o_TABL_  o_TABR_  _______
+                          _______  _______  _______    _SPACE_  _ENTER_  _______
       >;
     };
 
     num_layer {
       label = "NUM";
       bindings = <
-        _______   _LCTRL_   _LOPT__   _LCTRL_   _______      _______   &kp N7    &kp N8    &kp N9    _______
-        _______   _______   _LCMD__   _LSHFT_   _______      &kp N0    &kp N3    &kp N5    &kp N6    _______
-        _______   _______   _______   _______   _______      _______   &kp N1    &kp N2    &kp N3    _______
-                            _______   _______   _______      _SPACE_   _______    _______
+        _______  _LCTRL_  _LOPT__  _LCTRL_  _______    _______  ___7___  ___8___  ___9___  _______
+        _______  _______  _LCMD__  _LSHFT_  _______    ___0___  ___4___  ___5___  ___6___  _______
+        _______  _______  _______  _______  _______    _______  ___1___  ___2___  ___3___  _______
+                          _______  _______  _______    _SPACE_  _ENTER_  _______
       >;
     };
   };

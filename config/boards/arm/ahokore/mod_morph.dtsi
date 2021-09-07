@@ -36,7 +36,7 @@ morph_dquote_question: morph_dquote_question {
   compatible = "zmk,behavior-mod-morph";
   label = "MORPH_DQUOTE_QUESTION";
   #binding-cells = <0>;
-  bindings = <&kp DOUBLE_QUOTE>, <&kp QUESTION>;
+  bindings = <&kp DOUBLE_QUOTES>, <&kp QUESTION>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
