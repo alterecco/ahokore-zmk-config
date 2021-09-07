@@ -62,6 +62,7 @@
     #define _COMMA_ &morph_comma_underscore
     #define _MINUS_ &morph_minus_plus
     #define _COLON_ &morph_colon_pipe
+    #define _GRAVE_ &morph_grave_equal
     #define __DOT__ &morph_hmrc_dot_ampersand
     #define _SLASH_ &morph_hmro_slash_star
     #define _SQUOT_ &morph_squote_exclamation
@@ -91,7 +92,7 @@
     base_layer {
       label = "DEF";
       bindings = <
-        ___J___  ___F___  ___M___  ___P___  ___V___    _COLON_  __DOT__  _SLASH_  _SQUOT_  _DQUOT_
+        ___J___  ___F___  ___M___  ___P___  ___V___    _GRAVE_  __DOT__  _SLASH_  _SQUOT_  _DQUOT_
         ___R___  ___S___  ___N___  ___D___  ___W___    _COMMA_  ___A___  ___E___  ___I___  ___H___
         ___X___  ___G___  ___L___  ___C___  ___B___    _MINUS_  ___U___  ___O___  ___Y___  ___K___
                           _______  _LSHFT_  ___T___    _SPACE_  _LSHFT_  _______

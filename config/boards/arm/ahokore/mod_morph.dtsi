@@ -24,6 +24,14 @@ morph_colon_pipe: morph_colon_pipe {
   mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
+morph_grave_equal: morph_grave_equal {
+  compatible = "zmk,behavior-mod-morph";
+  label = "MORPH_GRAVE_EQUAL";
+  #binding-cells = <0>;
+  bindings = <&kp GRAVE>, <&kp EQUAL>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+
 morph_hmrc_dot_ampersand: morph_hmrc_dot_ampersand {
   compatible = "zmk,behavior-mod-morph";
   label = "MORPH_HMRC_DOT_AMPERSAND";
