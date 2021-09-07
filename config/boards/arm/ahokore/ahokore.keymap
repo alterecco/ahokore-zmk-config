@@ -68,11 +68,11 @@
     #define _BKSPC_ &kp BACKSPACE
     #define __DEL__ &kp DELETE
 
-    #define ___A___ &kp A
+    #define ___A___ _HMRS A
     #define ___B___ &kp B
     #define ___C___ &kp C
-    #define ___D___ &kp D
-    #define ___E___ &kp E
+    #define ___D___ _HMLS D
+    #define ___E___ _HMRG E
     #define ___F___ &kp F
     #define ___G___ &kp G
     #define ___H___ &kp H
@@ -80,14 +80,14 @@
     #define ___J___ &kp J
     #define ___K___ &kp K
     #define ___L___ &kp L
-    #define ___M___ &kp M
-    #define ___N___ &kp N
+    #define ___M___ _HMLO M
+    #define ___N___ _HMLG N
     #define ___O___ &kp O
-    #define ___P___ &kp P
+    #define ___P___ _HMLC P
     #define ___Q___ &kp Q
     #define ___R___ &kp R
-    #define ___S___ &kp S
-    #define ___T___ &kp T
+    #define ___S___ HLNUM S
+    #define ___T___ HLNAV T
     #define ___U___ &kp U
     #define ___V___ &kp V
     #define ___W___ &kp W
@@ -95,24 +95,33 @@
     #define ___Y___ &kp Y
     #define ___Z___ &kp Z
 
+    #define _COMMA_ &morph_comma_underscore
+    #define _MINUS_ &morph_minus_plus
+    #define _COLON_ &morph_colon_pipe
+    #define __DOT__ &morph_hmlc_dot_ampersand
+    #define _SLASH_ _HMRA SLASH
+    #define _SQUOT_ &morph_squote_exclamation
+    #define _DQUOT_ &morph_dquote_question
+
+
     #define _LSHFT_ &sk LEFT_SHIFT
     #define _LCTRL_ &sk LEFT_CONTROL
     #define _LOPT__ &sk LEFT_ALT
     #define _LCMD__ &sk LEFT_COMMAND
 
-//        _______   _______   _______   _______   _______      _______   _______   _______   _______   _______
-//        _______   _______   _______   _______   _______      _______   _______   _______   _______   _______
-//        _______   _______   _______   _______   _______      _______   _______   _______   _______   _______
-//                            _______   _______   _______      _______   _______   _______
+//        _______  _______  _______  _______  _______      _______  _______  _______  _______  _______
+//        _______  _______  _______  _______  _______      _______  _______  _______  _______  _______
+//        _______  _______  _______  _______  _______      _______  _______  _______  _______  _______
+//                          _______  _______  _______      _______  _______  _______
 
 
     base_layer {
       label = "DEF";
       bindings = <
-        ___J___  ___F___     &hm LALT M    &hm LCTRL P  ___V___         &r1_c6      &r1_c7       &hm RALT SLASH   &kp DQT   &kp SQT
-        ___R___  &hl NUM S   &hm LCMD N    &hm LSHFT D  ___W___         &r2_c6      &hm LSHFT A  &hm RCMD E       ___I___   ___H___
-        ___X___  ___G___     ___L___       ___C___      ___B___         &r3_c6      ___U___      ___O___          ___Y___   ___K___
-                             _______       _LSHFT_      &hl NAV T       _SPACE_     _LSHFT_    _______
+        ___J___  ___F___  ___M___  ___P___  ___V___      _COLON_  __DOT__  _SLASH_  _SQUOT_  _DQUOT_
+        ___R___  ___S___  ___N___  ___D___  ___W___      _COMMA_  ___A___  ___E___  ___I___  ___H___
+        ___X___  ___G___  ___L___  ___C___  ___B___      _MINUS_  ___U___  ___O___  ___Y___  ___K___
+                          _______  _LSHFT_  ___T___      _SPACE_  _LSHFT_  _______
       >;
     };
 

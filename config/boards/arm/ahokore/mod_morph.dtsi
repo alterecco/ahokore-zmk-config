@@ -24,6 +24,22 @@ morph_minus_plus: morph_minus_plus {
   mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
+morph_squote_exclamation: morph_squote_exclamation {
+  compatible = "zmk,behavior-mod-morph";
+  label = "MORPH_SQUOTE_EXCLAMATION";
+  #binding-cells = <0>;
+  bindings = <&kp SINGLE_QUOTE>, <&kp EXCLAMATION>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+
+morph_dquote_question: morph_dquote_question {
+  compatible = "zmk,behavior-mod-morph";
+  label = "MORPH_DQUOTE_QUESTION";
+  #binding-cells = <0>;
+  bindings = <&kp DOUBLE_QUOTE>, <&kp QUESTION>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+
 morph_hmlc_dot_ampersand: morph_hmlc_dot_ampersand {
   compatible = "zmk,behavior-mod-morph";
   label = "MORPH_HMCT_DOT_AMPERSAND";

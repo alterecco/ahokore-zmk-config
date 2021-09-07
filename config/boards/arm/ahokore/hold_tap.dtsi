@@ -20,12 +20,13 @@ hl: hold_tap_layers {
 
 #define _HMLS  &hm LEFT_SHIFT
 #define _HMLC  &hm LEFT_CONTROL
-#define _HMLA  &hm LEFT_ALT
+#define _HMLO  &hm LEFT_ALT
 #define _HMLG  &hm LEFT_GUI
 
 #define _HMRS  &hm RIGHT_SHIFT
 #define _HMRC  &hm RIGHT_CONTROL
-#define _HMRA  &hm RIGHT_ALT
+#define _HMRO  &hm RIGHT_ALT
 #define _HMRG  &hm RIGHT_GUI
 
-#define _HLNUM &hl NUM
+#define HLNUM &hl NUM
+#define HLNAV &hl NAV
