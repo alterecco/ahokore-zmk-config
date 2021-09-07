@@ -68,6 +68,38 @@
     #define _BKSPC_ &kp BACKSPACE
     #define __DEL__ &kp DELETE
 
+    #define ___A___ &kp A
+    #define ___B___ &kp B
+    #define ___C___ &kp C
+    #define ___D___ &kp D
+    #define ___E___ &kp E
+    #define ___F___ &kp F
+    #define ___G___ &kp G
+    #define ___H___ &kp H
+    #define ___I___ &kp I
+    #define ___J___ &kp J
+    #define ___K___ &kp K
+    #define ___L___ &kp L
+    #define ___M___ &kp M
+    #define ___N___ &kp N
+    #define ___O___ &kp O
+    #define ___P___ &kp P
+    #define ___Q___ &kp Q
+    #define ___R___ &kp R
+    #define ___S___ &kp S
+    #define ___T___ &kp T
+    #define ___U___ &kp U
+    #define ___V___ &kp V
+    #define ___W___ &kp W
+    #define ___X___ &kp X
+    #define ___Y___ &kp Y
+    #define ___Z___ &kp Z
+
+    #define _LSHFT_ &sk LEFT_SHIFT
+    #define _LCTRL_ &sk LEFT_CONTROL
+    #define _LOPT__ &sk LEFT_ALT
+    #define _LCMD__ &sk LEFT_COMMAND
+
 //        _______   _______   _______   _______   _______      _______   _______   _______   _______   _______
 //        _______   _______   _______   _______   _______      _______   _______   _______   _______   _______
 //        _______   _______   _______   _______   _______      _______   _______   _______   _______   _______
@@ -77,18 +109,18 @@
     base_layer {
       label = "DEF";
       bindings = <
-        &kp J   &kp F       &hm LALT M    &hm LCTRL P   &kp V           &r1_c6      &r1_c7       &hm RALT SLASH   &kp DQT   &kp SQT
-        &kp R   &hl NUM S   &hm LCMD N    &hm LSHFT D   &kp W           &r2_c6      &hm LSHFT A  &hm RCMD E       &kp I     &kp H
-        &kp X   &kp G       &kp L         &kp C         &kp B           &r3_c6      &kp U        &kp O            &kp Y     &kp K
-                            _______       &sk LSHFT     &hl NAV T       _SPACE_     &sk LSHFT    _______
+        ___J___  ___F___     &hm LALT M    &hm LCTRL P  ___V___         &r1_c6      &r1_c7       &hm RALT SLASH   &kp DQT   &kp SQT
+        ___R___  &hl NUM S   &hm LCMD N    &hm LSHFT D  ___W___         &r2_c6      &hm LSHFT A  &hm RCMD E       ___I___   ___H___
+        ___X___  ___G___     ___L___       ___C___      ___B___         &r3_c6      ___U___      ___O___          ___Y___   ___K___
+                             _______       _LSHFT_      &hl NAV T       _SPACE_     _LSHFT_    _______
       >;
     };
 
     nav_layer {
       label = "NAV";
       bindings = <
-        _______   &kp LCTRL &kp LALT  &kp LCTRL _______      _______   _BKSPC_   __UP___   __DEL__   _______
-        _______   _______   &kp LCMD  &kp LSHFT _______      _______   _LEFT__   _DOWN__   _RIGHT_   _______
+        _______   _LCTRL_   _LOPT__   _LCTRL_   _______      _______   _BKSPC_   __UP___   __DEL__   _______
+        _______   _______   _LCMD__   _LSHFT_   _______      _______   _LEFT__   _DOWN__   _RIGHT_   _______
         _______   _______   _______   _______   _______      _______   __TAB__   o_TABL_   o_TABR_   _______
                             _______   _______   _______      _______   _ENTER_   _______
       >;
@@ -97,8 +129,8 @@
     num_layer {
       label = "NUM";
       bindings = <
-        _______   &kp LCTRL &kp LALT  &kp LCTRL _______      _______   &kp N7    &kp N8    &kp N9    _______
-        _______   _______   &kp LCMD  &kp LSHFT _______      &kp N0    &kp N3    &kp N5    &kp N6    _______
+        _______   _LCTRL_   _LOPT__   _LCTRL_   _______      _______   &kp N7    &kp N8    &kp N9    _______
+        _______   _______   _LCMD__   _LSHFT_   _______      &kp N0    &kp N3    &kp N5    &kp N6    _______
         _______   _______   _______   _______   _______      _______   &kp N1    &kp N2    &kp N3    _______
                             _______   _______   _______      _SPACE_   _______    _______
       >;
