@@ -72,18 +72,18 @@ COMBO(num_0, &kp N0, 11 15, DEF)
 
 COMBO(combo_z, &kp Z, 3 4, DEF)
 COMBO(combo_q, &kp Q, 29 26, DEF)
-combo_lf {
-  bindings = <&macro_lf>;
-  key-positions = <1 2>;
-  layers = <DEF>;
-};
-combo_lp {
-  bindings = <&macro_lp>;
-  key-positions = <2 3>;
-  layers = <DEF>;
-};
-combo_qu {
-  bindings = <&macro_qu>;
-  key-positions = <26 28>;
-  layers = <DEF>;
-};
+//combo_lf {
+//  bindings = <&macro_lf>;
+//  key-positions = <1 2>;
+//  layers = <DEF>;
+//};
+//combo_lp {
+//  bindings = <&macro_lp>;
+//  key-positions = <2 3>;
+//  layers = <DEF>;
+//};
+//combo_qu {
+//  bindings = <&macro_qu>;
+//  key-positions = <26 28>;
+//  layers = <DEF>;
+//};
