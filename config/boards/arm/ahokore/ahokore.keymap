@@ -71,7 +71,7 @@
     #define _COMMA_ &morph_comma_underscore
     #define _MINUS_ &morph_minus_plus
     #define _COLON_ &morph_colon_pipe
-    #define _GRAVE_ &morph_graven_equal
+    #define _GRAVE_ &morph_grave_equal
     #define __DOT__ &morph_hmrc_dot_ampersand
     #define _SLASH_ &morph_hmro_slash_star
     #define _SQUOT_ &morph_squote_exclamation
