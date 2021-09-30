@@ -39,11 +39,11 @@ COMBO(COLON, &kp COLON, 12 16, DEF)
 COMBO(SEMICOLON, &kp SEMICOLON, 12 17, DEF)
 COMBO(HASH, &kp HASH, 12 18, DEF)
 COMBO(PERCENT, &kp PERCENT, 12 19, DEF)
-COMBO(BACKSLASH, &kp BACKSLASH, 12 5, DEF)
+COMBO(BACKSLASH, &kp CARET, 12 5, DEF)
 COMBO(PIPE, &kp PIPE, 12 6, DEF)
-COMBO(DOLLAR, &kp DOLLAR, 12 7, DEF)
+COMBO(DOLLAR, &kp BACKSLASH, 12 7, DEF)
 COMBO(AT, &kp AT, 12 8, DEF)
-COMBO(CARET, &kp CARET, 12 9, DEF)
+COMBO(CARET, &kp DOLLAR, 12 9, DEF)
 
 COMBO(undo, MAC_UNDO, 20 21, DEF)
 COMBO(redo, MAC_REDO, 20 10, DEF)
@@ -70,8 +70,9 @@ COMBO(num_8, &kp N8, 11 7, DEF)
 COMBO(num_9, &kp N9, 11 8, DEF)
 COMBO(num_0, &kp N0, 11 15, DEF)
 
-COMBO(combo_z, &kp Z, 3 4, DEF)
-COMBO(combo_q, &kp Q, 29 26, DEF)
+COMBO(combo_z, &kp Z, 2 3, DEF)
+COMBO(combo_q, &kp Q, 1 2, DEF)
+
 //combo_lf {
 //  bindings = <&macro_lf>;
 //  key-positions = <1 2>;

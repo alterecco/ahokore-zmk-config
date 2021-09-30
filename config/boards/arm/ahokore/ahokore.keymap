@@ -1,8 +1,13 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "ahokore.h"
 #include "keycodes.h"
+
+// LAYERS
+#define DEF 0
+#define NAV 1
+#define NUM 2
+#define WIN 3
 
 &sk {
   release-after-ms = <2000>;
@@ -38,22 +43,22 @@
     #define _BKSPC_ &kp BACKSPACE
     #define __DEL__ &kp DELETE
 
-    #define ___A___ _HMRS A
+    #define ___A___ HMRS A
     #define ___B___ &kp B
     #define ___C___ &kp C
-    #define ___D___ _HMLS D
-    #define ___E___ _HMRG E
+    #define ___D___ HMLS D
+    #define ___E___ HMRG E
     #define ___F___ &kp F
     #define ___G___ &kp G
     #define ___H___ &kp H
-    #define ___I___ &kp I
+    #define ___I___ HLWIN I
     #define ___J___ &kp J
     #define ___K___ &kp K
     #define ___L___ &kp L
-    #define ___M___ _HMLO M
-    #define ___N___ _HMLG N
+    #define ___M___ HMLO M
+    #define ___N___ HMLG N
     #define ___O___ &kp O
-    #define ___P___ _HMLC P
+    #define ___P___ HMLC P
     #define ___R___ &kp R
     #define ___S___ HLNUM S
     #define ___T___ HLNAV T
@@ -66,7 +71,7 @@
     #define _COMMA_ &morph_comma_underscore
     #define _MINUS_ &morph_minus_plus
     #define _COLON_ &morph_colon_pipe
-    #define _GRAVE_ &morph_grave_equal
+    #define _GRAVE_ &morph_graven_equal
     #define __DOT__ &morph_hmrc_dot_ampersand
     #define _SLASH_ &morph_hmro_slash_star
     #define _SQUOT_ &morph_squote_exclamation
@@ -76,6 +81,9 @@
     #define _LCTRL_ &sk LEFT_CONTROL
     #define _LOPT__ &sk LEFT_ALT
     #define _LCMD__ &sk LEFT_COMMAND
+
+    #define _W_NEXT &kp LG(NON_US_BACKSLASH)
+    #define _W_PREV &kp LS(LG(NON_US_BACKSLASH))
 
     #define ___0___ &kp N0
     #define ___1___ &kp N1
@@ -119,6 +127,16 @@
         _______  _LCTRL_  _LOPT__  _LCTRL_  _______    _______  ___7___  ___8___  ___9___  _______
         _______  _______  _LCMD__  _LSHFT_  _______    ___0___  ___4___  ___5___  ___6___  _______
         _______  _______  _______  _______  _______    _______  ___1___  ___2___  ___3___  _______
+                          _______  _______  _______    _SPACE_  _ENTER_  _______
+      >;
+    };
+
+    win_layer {
+      label = "WIN";
+      bindings = <
+        _______  _______  _______  _______  _______    _______  _______  _______  _______  _______
+        _______  _______  _W_PREV  _W_NEXT  _______    _______  _______  _______  _______  _______
+        _______  _______  _______  _______  _______    _______  _______  _______  _______  _______
                           _______  _______  _______    _SPACE_  _ENTER_  _______
       >;
     };
