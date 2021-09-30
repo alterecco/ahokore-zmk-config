@@ -8,6 +8,10 @@
   release-after-ms = <2000>;
 };
 
+&kscan0 {
+  debounce-period = <10>;
+}
+
 / {
 
   behaviors {
