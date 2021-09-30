@@ -100,12 +100,12 @@
     #define _BRIMN_ &kp F14
     #define _BRIMX_ &kp F15
 
-    #define _DSKT1_ LS(LC(LA(LG(N1))))
-    #define _DSKT2_ LS(LC(LA(LG(N2))))
-    #define _DSKT3_ LS(LC(LA(LG(N3))))
-    #define _DSKT4_ LS(LC(LA(LG(N4))))
-    #define _DSKT5_ LS(LC(LA(LG(N5))))
-    #define _DSKT6_ LS(LC(LA(LG(N6))))
+    #define _DSKT1_ &kp LS(LC(LA(LG(N1))))
+    #define _DSKT2_ &kp LS(LC(LA(LG(N2))))
+    #define _DSKT3_ &kp LS(LC(LA(LG(N3))))
+    #define _DSKT4_ &kp LS(LC(LA(LG(N4))))
+    #define _DSKT5_ &kp LS(LC(LA(LG(N5))))
+    #define _DSKT6_ &kp LS(LC(LA(LG(N6))))
 
     #define _SCRSH_ LS(LG(N4))
 
