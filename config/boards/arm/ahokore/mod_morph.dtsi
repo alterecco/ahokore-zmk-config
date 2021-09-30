@@ -36,7 +36,7 @@ morph_hmrc_dot_ampersand: morph_hmrc_dot_ampersand {
   compatible = "zmk,behavior-mod-morph";
   label = "MORPH_HMRC_DOT_AMPERSAND";
   #binding-cells = <0>;
-  bindings = <_HMRC DOT>, <&kp AMPERSAND>;
+  bindings = <HMRC DOT>, <&kp AMPERSAND>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
@@ -44,7 +44,7 @@ morph_hmro_slash_star: morph_hmro_slash_star {
   compatible = "zmk,behavior-mod-morph";
   label = "MORPH_SLASH_STAR";
   #binding-cells = <0>;
-  bindings = <_HMRO SLASH>, <&kp STAR>;
+  bindings = <HMRO SLASH>, <&kp STAR>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
