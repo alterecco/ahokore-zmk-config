@@ -107,7 +107,7 @@
     #define _DSKT5_ &kp LS(LC(LA(LG(N5))))
     #define _DSKT6_ &kp LS(LC(LA(LG(N6))))
 
-    #define _SCRSH_ LS(LG(N4))
+    #define _SCRSH_ &kp LS(LG(N4))
 
     #define _BTCLR_ &bt BT_CLR
     #define _BT_00_ &bt BT_SEL 0
