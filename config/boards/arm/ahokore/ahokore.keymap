@@ -8,6 +8,7 @@
 #define NAV 1
 #define NUM 2
 #define WIN 3
+#define SYS 4
 
 &sk {
   release-after-ms = <2000>;
@@ -45,7 +46,7 @@
 
     #define ___A___ HMRS A
     #define ___B___ &kp B
-    #define ___C___ &kp C
+    #define ___C___ HLSYS C
     #define ___D___ HMLS D
     #define ___E___ HMRG E
     #define ___F___ &kp F
@@ -96,6 +97,23 @@
     #define ___8___ &kp N8
     #define ___9___ &kp N9
 
+    #define _BRIMN_ &kp F14
+    #define _BRIMX_ &kp F15
+
+    #define _DSKT1_ LS(LC(LA(LG(N1))))
+    #define _DSKT2_ LS(LC(LA(LG(N2))))
+    #define _DSKT3_ LS(LC(LA(LG(N3))))
+    #define _DSKT4_ LS(LC(LA(LG(N4))))
+    #define _DSKT5_ LS(LC(LA(LG(N5))))
+    #define _DSKT6_ LS(LC(LA(LG(N6))))
+
+    #define _SCRSH_ LS(LG(N4))
+
+    #define _BTCLR_ &bt BT_CLR
+    #define _BT_00_ &bt BT_SEL 0
+    #define _BT_01_ &bt BT_SEL 1
+    #define _BT_02_ &bt BT_SEL 2
+
 //        _______  _______  _______  _______  _______    _______  _______  _______  _______  _______
 //        _______  _______  _______  _______  _______    _______  _______  _______  _______  _______
 //        _______  _______  _______  _______  _______    _______  _______  _______  _______  _______
@@ -134,10 +152,20 @@
     win_layer {
       label = "WIN";
       bindings = <
-        _______  _______  _______  _______  _______    _______  _______  _______  _______  _______
+        _______  _DSKT1_  _DSKT2_  _DSKT3_  _______    _______  _DSKT4_  _DSKT5_  _DSKT6_  _______
         _______  _______  _W_PREV  _W_NEXT  _______    _______  _______  _______  _______  _______
         _______  _______  _______  _______  _______    _______  _______  _______  _______  _______
                           _______  _______  _______    _SPACE_  _ENTER_  _______
+      >;
+    };
+
+    sys_layer {
+      label = "SYS";
+      bindings = <
+        _BTCLR_  _BT_00_  _BT_01_  _BT_02_  _______    _______  _______  _______  _______  _______
+        _______  _______  _______  _______  _______    _______  _SCRSH_  _______  _______  _______
+        _______  _______  _______  _______  _______    _______  _______  _______  _______  _______
+                          _______  _______  _______    _______  _______  _______
       >;
     };
   };

@@ -29,3 +29,4 @@ hl: hold_tap_layers {
 #define HLNUM &hl NUM
 #define HLNAV &hl NAV
 #define HLWIN &hl WIN
+#define HLSYS &hl SYS
